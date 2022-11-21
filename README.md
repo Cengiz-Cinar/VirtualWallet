@@ -1,14 +1,14 @@
 # WALLET MICROSERVICE
----
+
 Wallet microservice running on the JVM that manages credit/debit transactions on behalf of players
 
 ## Requirements
----
+
 1. Java 8
 2. Maven 3
 
 ## How to run the application
----
+
 1. Execute below command to build the application from root folder in the command line
 ```
 mvn clean install
@@ -24,7 +24,7 @@ mvn spring-boot:run
 http://localhost:8080/swagger-ui/index.html
 ```
 ## API endpoints
----
+
 ### 1. Create Wallet - Post endpoint
 
 ```sh
@@ -81,16 +81,17 @@ http://localhost:8080/api/debit/{id}
 http://localhost:8080/api/transaction/{id}
 ```
 
-Important
+### Important
 
 Only two transaction are supported and those transaction codes need to be used when adding transactions
 ```
 CREDIT - for deposit transactions
 DEBIT - for Withdraw transactions
 ```
-Technologies used
----
+### Technologies used
+***
 Java8
 Spring boot
 JPA
 H2
+***
