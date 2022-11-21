@@ -37,7 +37,7 @@ public class PlayerService {
          Player savedPlayer =  playerRepository.save(todo(playerDTO));
          Account acc = Account.builder().balance(0.00).player(savedPlayer).build();
             accountRepository.save(acc);
-         return todto(savedPlayer);
+         return toDto(savedPlayer);
         }}
 
 
@@ -51,7 +51,7 @@ public class PlayerService {
     public Player todo(PlayerDTO playerDTO){
         return modelMapper.map(playerDTO,Player.class);
     }
-    public PlayerDTO todto(Player player){
+    public PlayerDTO toDto(Player player){
         return modelMapper.map(player,PlayerDTO.class);
     }
 }

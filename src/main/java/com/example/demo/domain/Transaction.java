@@ -29,10 +29,5 @@ public class Transaction {
     @JoinColumn(name = "account_id")
     private Account account;
 
-//    @JsonIgnore
-//    @ManyToMany(mappedBy = "transactions",cascade = {CascadeType.ALL})
-//    private Set<Account> accounts=new HashSet<>();
-//    @OneToMany(mappedBy="transaction")
-//    private Set<Record> records;
 
 }

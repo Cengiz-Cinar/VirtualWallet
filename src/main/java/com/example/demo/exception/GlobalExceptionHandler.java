@@ -21,12 +21,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity(errorMessage, HttpStatus.CONFLICT);
     }
 
-    @ExceptionHandler(value = RecordNotFoundException.class)
-    public ResponseEntity<ErrorMessage> resourceNotFoundException(RecordNotFoundException ex){
-        ErrorMessage errorMessage = ErrorMessage.builder().body(ex.getMessage()).code(HttpStatus.NOT_FOUND)
-                .timeStamp(LocalDateTime.now()).build();
-        return new ResponseEntity(errorMessage, HttpStatus.NOT_FOUND);
-    }
+
     @ExceptionHandler(value = InvalidAmountException.class)
     public ResponseEntity<ErrorMessage> invalidTransactionAmountException(InvalidAmountException ex){
         ErrorMessage errorMessage = ErrorMessage.builder().body(ex.getMessage()).code(HttpStatus.BAD_REQUEST)

@@ -19,6 +19,8 @@ public class PlayerDTO {
     private Long id;
     @Size(min=3,message = "Firstname must be of minimum 3 characters!")
     @NotEmpty
+
+
     private String firstName;
     @Size(min=3,message = "Lastname must be of minimum 3 characters!")
     @NotEmpty
