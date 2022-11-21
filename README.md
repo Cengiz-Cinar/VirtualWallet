@@ -89,9 +89,7 @@ CREDIT - for deposit transactions
 DEBIT - for Withdraw transactions
 ```
 ### Technologies used
-***
-Java8
-Spring boot
-JPA
-H2
-***
+* Java8
+* Spring boot
+* JPA
+* H2
